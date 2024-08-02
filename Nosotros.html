@@ -11,19 +11,19 @@
 </head>
 
 <body>
-    <header class="banner">
-        <a href="Index.html"><img src="img/logo-blanco-dexa.png" alt="logo"></a>
+    <header class="banner" role="menubar">
+        <a href="Index.html"><img src="img/logo-blanco-dexa.png" alt="main-logo"></a>
 
         <nav>
-            <strong><a href="Index.html" class="Inicio">Inicio</a></strong>
-            <strong><a href="Nosotros.html" class="Nosotros">Nosotros</a></strong>
-            <strong><a href="Nuestros-Servicios.html" class="Servicios">Servicios</a></strong><!--Actualizar a HTML Semántico Página de Servicios -->
+            <strong><a href="Index.html" class="Inicio" aria-label="ir a la seccion de inicio">Inicio</a></strong>
+            <strong><a href="Nosotros.html" class="Nosotros" aria-label="ir a la seccion de nosotros">Nosotros</a></strong>
+            <strong><a href="Nuestros-Servicios.html" class="Servicios" aria-label="ir a la seccion de servicios">Servicios</a></strong>
         </nav>
 
         <h1>nosotros</h1>
     </header>
 
-    <main class="aboutusmain">
+    <main class="aboutusmain" role="main">
         
         <article class="aboutusintro">
             
@@ -41,7 +41,7 @@
                 clientes de la manera más excepcional.</p>
             </section>
 
-            <img src="img/esfera-nosotros.jpeg" class="aboutusimg">
+            <img src="img/esfera-nosotros.jpeg" class="aboutusimg" alt="imagen que representa el derecho en un mundo tecnológico">
         </article>
 
         <article class="values">
@@ -55,7 +55,7 @@
             <section class="othervalues">
                 
                 <h4>Ética Responsable</h3>
-                <p>Nuestra práctica legal se basa en principios éticos elevados, garantizando integridad en cada acción.</p>
+                <p lang="en">This is a paragraph example in English</p>
 
                 <h4>Transparencia Total</h4>
                 <p>Construimos relaciones sólidas mediante la comunicación abierta y honesta, generando confianza desde el inicio.</p>
@@ -68,7 +68,7 @@
             </section>
         </article>
 
-        <img src="img/footer-nosotros.png" class="footerimg">
+        <img src="img/footer-nosotros.png" class="footerimg" alt="imagen de dos manos dándose un apetrón por llegar a un acuerdo">
 
         <article class="contactform">
             <form>
@@ -76,21 +76,21 @@
                     <legend>CONTÁCTANOS</legend>
                     <section>
                         <label for="name">Nombre</label>
-                        <input type="name" required placeholder="Introduce tu nombre completo">
+                        <input name="name" id="name" type="text" required placeholder="Introduce tu nombre completo">
                     </section>
 
                     <br>
 
                     <section>
                         <label for="email">Email</label>
-                        <input type="email" required placeholder="Introduce tu email">
+                        <input email="email" id="email" type="text" required placeholder="Introduce tu email">
                     </section>
 
                     <br>
 
                     <section>
-                        <label for="teléfono">Teléfono</label>
-                        <input type="number" required placeholder="Introduce tu teléfono a 10 dígitos" minlength="10">
+                        <label for="telefono">Teléfono</label>
+                        <input telefono="telefono" id="telefono" type="number" required placeholder="Introduce tu teléfono a 10 dígitos" minlength="10">
                     </section>
                 </fieldset>
 
